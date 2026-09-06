@@ -1,0 +1,13 @@
+# Ignore images and model files
+*.png
+*.jpg
+*.jpeg
+*.pt
+
+# Ignore video files
+*.mp4
+
+# Ignore environments and caches
+.venv/
+__pycache__/
+target.faceprint

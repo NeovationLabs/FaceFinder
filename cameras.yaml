@@ -1,0 +1,31 @@
+# cameras.yaml
+#
+# List every RTSP camera you want to search across. "id" is just a label
+# used in logs/alerts (name it after the physical location, e.g. entrance,
+# checkout_1, etc.) — it does not need to match anything on the camera itself.
+#
+# RTSP URL format is usually:
+#   rtsp://<username>:<password>@<camera-ip>:<port>/<stream-path>
+# The exact stream path varies by camera brand/firmware — check your
+# camera's manual or admin page for the correct RTSP URL.
+
+# cameras:
+#   - id: "camera_1"
+#     rtsp_url: "rtsp://192.168.1.102:8080/h264.sdp"
+#   - id: "camera_2"
+#     rtsp_url: "rtsp://192.168.1.102:8080/h264.sdp"
+#   - id: "camera_3"
+#     rtsp_url: "rtsp://192.168.1.102:8080/h264.sdp"
+#   - id: "camera_4"
+#     rtsp_url: "rtsp://192.168.1.102:8080/h264.sdp"
+
+loop_video: True
+cameras:
+  - id: "camera_1"
+    source: "video1.mp4"
+  - id: "camera_2"
+    source: "video2.mp4"
+  - id: "camera_3"
+    source: "video3.mp4"
+  - id: "camera_4"
+    source: "video4.mp4"
