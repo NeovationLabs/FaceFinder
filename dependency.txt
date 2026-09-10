@@ -1,0 +1,7 @@
+ 1750  pip uninstall -y llama-cpp-python
+ 1751  CUDAARCHS=86 pip install llama-cpp-python --no-cache-dir --force-reinstall   -C cmake.args="-DGGML_CUDA=on;-DGGML_NATIVE=ON;-DGGML_AVX512=OFF;-DCMAKE_CUDA_ARCHITECTURES=86;-DCMAKE_CUDA_COMPILER_WORKS=1;-DCMAKE_CUDA_COMPILER=/usr/local/cuda/bin/nvcc"
+ 1752  export LLM_N_GPU_LAYERS=20
+ 1753  uvicorn backend.main:app --port 8000
+ 1754  pip install "numpy<2.0.0"
+ 1755  export LLM_N_GPU_LAYERS=20
+ 1756  uvicorn backend.main:app --port 8000
